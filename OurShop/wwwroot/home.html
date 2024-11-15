@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script defer src="home.js"></script>
+    <link rel="stylesheet" href="Style.css" type="text/css"/>
+</head>
+<body>
+    <input id="loginEmail" placeholder="email" type="email" />
+    <input id="loginPassword" placeholder="password" type="password" maxlength="8" />
+    <button onclick="login()">login</button>
+    <button onclick="showSignUp()">new user</button>
+    <div class="signUp">
+        <input id="fullName" placeholder="full name" type="text" />
+        <input id="email" placeholder="email" type="email" />
+        <input id="password" placeholder="password" type="password" maxlength="14" onblur="fillProgress()" />
+        <progress max="4" id="progress" value="0"></progress>
+        <input id="phone" placeholder="phone number" type="number" maxlength="8" />
+        <button onclick="createUser()">sign in</button>
+    </div>
+
+</body>
+</html>
